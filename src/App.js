@@ -47,11 +47,12 @@ function App() {
               <Route path="/" element={<Bio />} />
             </Routes>
           </div>
+          <Social />
           <div>
-            <Social />
+
+            <Footer />
           </div>
         </Box>
-        <Footer />
       </Container>
     </ThemeProvider>
   )

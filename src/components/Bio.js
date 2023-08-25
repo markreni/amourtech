@@ -17,39 +17,40 @@ const Bio = () => {
 `
 
   const Holder = styled(Box)(() => ({
-    width: '80vw',
-    height: '80vh',
+    width: '75vw',
+    height: '84vh',
+    minHeight: '50px',
     background: 'transparent',
-    borderColor: 'RGB(255,255,255,0.1)',
-    //borderStyle: 'solid',
     borderRadius: '10px',
     display: 'static',
     marginTop: '7vh',
     marginLeft: 'max(30px, 5vw)',
+    overflow: 'scroll'
   }))
 
   const Text = styled(Typography)(() => ({
     color: 'secondary',
-    paddingBottom: '7vh',
-    animation: `${textShadowPopBr} 2s ease-in 0.0s infinite both`
-
+    paddingBottom: '6vh',
+    animation: `${textShadowPopBr} 2s ease-in 0.0s infinite both`,
+    paddingLeft: '2vw'
   }))
+
   return(
-    <div className="App">
-      <Holder>
-        <Typography sx={{ paddingTop: '5vh', paddingBottom: '10vh' }}>
+    <Holder>
+      <Typography variant='h1'>About AMOURtech</Typography>
+      <Typography variant='body1' sx={{ paddingTop: '5vh', paddingBottom: '10vh' }}>
           The instigator of crazy underground parties.<br />
           The ambassador of love.<br />
           Pissing off your parents is what I do.<br />
           Cheers.
-        </Typography>
-        <Typography sx={{ paddingBottom: '5vh' }}>I play</Typography>
+      </Typography>
+      <Typography sx={{ paddingBottom: '4vh' }}>I play</Typography>
+      <div>
         <Text variant="h1">Melodic House</Text>
         <Text variant="h1">Progressive House</Text>
         <Text variant="h1">Deep Tech House</Text>
-
-      </Holder>
-    </div>
+      </div>
+    </Holder>
   )
 }
 

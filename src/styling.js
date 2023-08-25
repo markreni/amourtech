@@ -29,34 +29,13 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          fontSize: 'max(1.5vw, 15px)',
+          fontSize: 'max(1.5vw, 12px)',
           fontWeight: 300,
           fontFamily: 'Oswald, Arial',
           '&:hover': { opacity: '50%' }
         },
-        /* contained: {
-          fontFamily: 'sans-serif',
-          fontWeight: 'lighter',
-          fontSize: 17,
-          padding: '1px 10px',
-          marginTop: '5px'
-        } */
       }
     },
-    /* MuiTextField: {
-      styleOverrides: {
-        root: {
-          height: '10px',
-          marginBottom: 40,
-          input: {
-            '&:-webkit-autofill': {
-              WebkitBoxShadow: '0 0 0 100px #f8bbd0 inset',
-              WebkitTextFillColor: 'default',
-            },
-          },
-        },
-      }
-    }, */
     MuiTypography: {
       styleOverrides: {
         root: {
@@ -73,6 +52,11 @@ export const theme = createTheme({
           color: 'white',
           textDecoration: 'none',
         },
+        h2: {
+          fontSize: 'max(20px, 2vw)',
+          color: 'white',
+          textDecoration: 'none',
+        },
         h4: {
           fontSize: 'max(15px, 1.1vw)',
           color: 'black',
@@ -80,6 +64,11 @@ export const theme = createTheme({
         },
         body1: {
           fontSize: 'max(17px, 1.1vw)',
+          color: 'white',
+          textDecoration: 'none',
+        },
+        body2: {
+          fontSize: 'max(10px, 1.5vw)',
           color: 'white',
           textDecoration: 'none',
         }
@@ -128,7 +117,7 @@ export const navigationBarStyling = {
 
 export const logoStyling = {
   position: 'absolute',
-  right: '-1.5vw',
+  right: '0vw',
   top: '0vw',
   backgroundSize: 'contain',
   height: '14vw',
@@ -137,18 +126,51 @@ export const logoStyling = {
 
 export const socialMediaStyling = {
   position: 'absolute',
-  right: 'max(18vw, 200px)',
-  top: 'max(25vh, 130px)',
-  width: '40px',
+  right: 'max(5vw, 100px)',
+  top: 'max(40vh, 130px)',
+  width: '200px',
+  height: '100px',
+  justifyContent: 'center',
 }
 
-export const gigStyling = {
-  width: '80vw',
+export const gigBoxStyling = {
+  width: '75vw',
   minWidth: 'max(320px, 60vw)',
   maxWidth: 'min(80vw, 600px)',
-  height: '75vh',
+  height: '70vh',
+  marginTop: '7vh',
+  marginLeft: 'max(30px, 5vw)',
+  overflow: 'hidden'
+}
+
+export const gigCardStyling = {
+  width: '75vw',
+  minWidth: 'max(320px, 60vw)',
+  maxWidth: 'min(80vw, 600px)',
+  height: '65vh',
   backgroundColor: 'RGB(255,255,255,0.1)',
   color: 'secondary.main',
+  marginTop: '2vh',
+  overflow: 'scroll'
+}
+
+export const footerStyling = {
+  position: 'fixed',
+  bottom: '0vh',
+  backgroundColor: 'primary.main',
+  width:'95vw',
+  minWidth: 'max(100px, 95vw)',
+  //marginTop: '10px',
+}
+
+export const contactStyling = {
+  width: '75vw',
+  height: '75vh',
+  background: 'transparent',
+  borderColor: 'RGB(255,255,255,0.1)',
+  //borderStyle: 'solid',
+  borderRadius: '10px',
+  display: 'static',
   marginTop: '7vh',
   marginLeft: 'max(30px, 5vw)',
   overflow: 'scroll'

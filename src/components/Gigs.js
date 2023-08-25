@@ -1,5 +1,5 @@
-import { gigStyling } from '../styling'
-import { Grid, Paper, Typography, Card, CardHeader, CardContent, Divider } from '@mui/material'
+import { gigCardStyling, gigBoxStyling } from '../styling'
+import { Grid, Paper, Typography, Card, CardContent, Divider, Box } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import gigs from '../gigs'
 
@@ -22,10 +22,11 @@ const Item = styled(Paper)(({ theme }) => ({
 }))
 
 const Gigs = () => {
+  //<CardHeader titleTypographyProps={{ fontSize: 'max(2.5vw, 30px)' }} title='Upcoming gigs' />
   return(
-    <div>
-      <Card sx={gigStyling}>
-        <CardHeader titleTypographyProps={{ fontSize: 'max(2.5vw, 30px)' }} title='Upcoming gigs' />
+    <Box sx={gigBoxStyling}>
+      <Typography variant='h1'>Upcoming gigs</Typography>
+      <Card sx={gigCardStyling}>
         <CardContent>
           {gigs.map((gig, index) => {
             return(
@@ -46,10 +47,9 @@ const Gigs = () => {
               </div>
             )
           })}
-
         </CardContent>
       </Card>
-    </div>
+    </Box>
   )
 }
 
