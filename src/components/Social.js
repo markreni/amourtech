@@ -20,7 +20,7 @@ const Social = () => {
   isMatch ? {
     position: 'absolute',
     left: 'max(3vw, 10px)',
-    top: 'max(79vh, 130px)',
+    top: 'max(81vh, 130px)',
     width: '85vw',
   } : !isHeight ? {
     position: 'absolute',
