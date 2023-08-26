@@ -20,12 +20,12 @@ const Social = () => {
   isMatch ? {
     position: 'absolute',
     left: 'max(3vw, 10px)',
-    top: 'max(87vh, 130px)',
+    top: 'max(85vh, 130px)',
     width: '85vw',
   } : !isHeight ? {
     position: 'absolute',
     left: 'max(42vw, 0px)',
-    top: 'max(65vh, 130px)',
+    top: 'max(58vh, 130px)',
     width: '85vw',
   } : {}
   const spacing = isSmallest ? 1 : !isHeight ? 2 : 4

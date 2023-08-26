@@ -88,7 +88,7 @@ export const theme = createTheme({
 })
 
 export const containerStyling = {
-  height: '70vh',
+  height: '100vh',
   width: '100vw',
   //maxHeight: '1000px',
   margin: '0px',
@@ -102,9 +102,9 @@ export const backgroundImageStyling = {
   },
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  height: '150%',
+  height: '100vh',
   width: '100%',
-  maxHeight: '150%',
+  maxHeight: '100vh',
   opacity: '80%',
   backgroundPosition: 'right',
 }

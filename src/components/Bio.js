@@ -38,7 +38,7 @@ const Bio = () => {
   return(
     <Holder>
       <Typography variant='h1'>About AMOURtech</Typography>
-      <Typography variant='body1' sx={{ paddingTop: '5vh', paddingBottom: '10vh' }}>
+      <Typography variant='body1' sx={{ paddingTop: '5vh', paddingBottom: '6vh' }}>
           The instigator of crazy underground parties.<br />
           The ambassador of love.<br />
           Pissing off your parents is what I do.<br />
