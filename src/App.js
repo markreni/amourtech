@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import useMenu from './useMenu'
 import Bio from './components/Bio'
 import Gigs from './components/Gigs'
 import Footer from './components/Footer'
@@ -18,20 +18,10 @@ import { ThemeProvider } from '@mui/material/styles'
 import MenuIcon from '@mui/icons-material/Menu'
 
 function App() {
-  const [anchorEl, setAnchorEl] = useState(null)
   const navigate = useNavigate()
+  const menu = useMenu()
 
   const isMatch = useMediaQuery(theme.breakpoints.down('xs'))
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget)
-  }
-
-  const handleClose = () => {
-    setAnchorEl(null)
-  }
-
-  const open = Boolean(anchorEl)
 
   return (
     <ThemeProvider theme={theme}>
@@ -58,35 +48,29 @@ function App() {
                 <div>
                   <MenuIcon
                     id='resources-button'
-                    onClick={handleClick}
-                    aria-control={open ? 'resources-menu' : undefined}
+                    onClick={menu.handleClick}
+                    aria-control={menu.open ? 'resources-menu' : undefined}
                     aria-haspopup='true'
-                    aria-expanded={open ? 'true' : undefined}
+                    aria-expanded={menu.open ? 'true' : undefined}
                   />
                   <Menu
                     id='resources-menu'
-                    anchorEl={anchorEl}
-                    open={open}
+                    anchorEl={menu.anchorEl}
+                    open={menu.open}
                     MenuListProps={{
                       'aria-labelledby': 'resources-button',
                     }}
-                    onClose={handleClose}
-                    anchorOrigin={{
-                      vertical: 'bottom',
-                      horizontal: 'right'
-                    }}
-                    transformOrigin={{
-                      vertical: 'top',
-                      horizontal: 'right'
-                    }}
+                    onClose={menu.handleClose}
+                    anchorReference="anchorPosition"
+                    anchorPosition={{ top: 30, left: 20 }}
                   >
-                    <MenuItem onClick={handleClose}><Button color="inherit" component={Link} to="/">
+                    <MenuItem onClick={menu.handleClose}><Button color="inherit" component={Link} to="/">
                   Bio
                     </Button></MenuItem>
-                    <MenuItem onClick={handleClose}><Button color="inherit" component={Link} to="/gigs">
+                    <MenuItem onClick={menu.handleClose}><Button color="inherit" component={Link} to="/gigs">
                   Gigs
                     </Button></MenuItem>
-                    <MenuItem onClick={handleClose}><Button color="inherit" component={Link} to="/contact">
+                    <MenuItem onClick={menu.handleClose}><Button color="inherit" component={Link} to="/contact">
                   Contact
                     </Button></MenuItem>
                   </Menu>
@@ -103,7 +87,9 @@ function App() {
               <Route path="/" element={<Bio />} />
             </Routes>
           </div>
-          <Social />
+          <div>
+            <Social />
+          </div>
           <div>
             <Footer />
           </div>

@@ -17,9 +17,8 @@ const Bio = () => {
 `
 
   const Holder = styled(Box)(() => ({
-    width: '75vw',
-    height: '84vh',
-    minHeight: '50px',
+    width: 'clamp(30vw, 50vw, 60vw)',
+    height: 'clamp(30vh, 78vh, 80vh)',
     background: 'transparent',
     borderRadius: '10px',
     display: 'static',
@@ -52,7 +51,7 @@ const Bio = () => {
       </Box>
       <div>
         <Typography variant='body1' sx={{ marginBottom: '2vh' }}>Latest mix</Typography>
-        <iframe width="90%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Famourtech%2Fmelodies-for-destruction-part-three%2F" />
+        <iframe width="70%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Famourtech%2Fmelodies-for-destruction-part-three%2F" />
       </div>
     </Holder>
   )

@@ -19,9 +19,9 @@ export const theme = createTheme({
   },
   breakpoints: {
     values: {
-      xs: 400,
+      xs: 350,
       sm: 600,
-      md: 900,
+      md: 800,
       lg: 1200,
       xl: 1536,
     },
@@ -41,7 +41,8 @@ export const theme = createTheme({
           fontSize: 'max(1.5vw, 12px)',
           fontWeight: 300,
           fontFamily: 'Oswald, Arial',
-          '&:hover': { opacity: '50%' }
+          '&:hover': { opacity: '50%' },
+          color: 'white'
         },
       }
     },
@@ -151,12 +152,16 @@ export const socialMediaStyling = {
 }
 
 export const gigBoxStyling = {
+  width: 'clamp(30vw, 50vw, 60vw)',
+  height: 'clamp(30vh, 78vh, 80vh)',
   marginTop: '7vh',
   marginLeft: 'max(30px, 5vw)',
   overflow: 'hidden',
 }
 
 export const gigCardStyling = {
+  width: 'clamp(30vw, 50vw, 60vw)',
+  height: 'clamp(30vh, 78vh, 80vh)',
   backgroundColor: 'RGB(255,255,255,0.1)',
   color: 'secondary.main',
   marginTop: '2vh',
