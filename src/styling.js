@@ -135,17 +135,17 @@ export const socialMediaStyling = {
 
 export const gigBoxStyling = {
   width: '75vw',
-  minWidth: 'max(320px, 60vw)',
+  minWidth: '45vw',
   maxWidth: 'min(80vw, 600px)',
   height: '70vh',
   marginTop: '7vh',
   marginLeft: 'max(30px, 5vw)',
-  overflow: 'hidden'
+  overflow: 'hidden',
 }
 
 export const gigCardStyling = {
   width: '75vw',
-  minWidth: 'max(320px, 60vw)',
+  minWidth: 'max(320px, 63vw)',
   maxWidth: 'min(80vw, 600px)',
   height: '65vh',
   backgroundColor: 'RGB(255,255,255,0.1)',

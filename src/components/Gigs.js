@@ -32,12 +32,12 @@ const Gigs = () => {
             return(
               <div key={index}>
                 <Grid container>
-                  <Grid component='div' item xs={8} md={8} lg={8} sx={{ marginBottom: '20px' }}>
+                  <Grid component='div' item xs={7} md={7} lg={7} sx={{ marginBottom: '20px' }}>
                     <Typography variant='body1'>
                       {gig.date} <br /> {gig.premises} <br /> <b>{gig.location}</b>
                     </Typography>
                   </Grid>
-                  <Grid item xs={4} md={4} lg={4} sx={{ marginBottom: '20px' }}>
+                  <Grid item xs={1} md={1} lg={1} sx={{ marginBottom: '20px' }}>
                     <Item onClick={() => alert('No tickets available yet.')}>
                       <Typography variant='h4'>Get tickets</Typography>
                     </Item>

@@ -30,25 +30,29 @@ const Bio = () => {
 
   const Text = styled(Typography)(() => ({
     color: 'secondary',
-    paddingBottom: '6vh',
+    paddingBottom: '5vh',
     animation: `${textShadowPopBr} 2s ease-in 0.0s infinite both`,
     paddingLeft: '2vw'
   }))
 
   return(
     <Holder>
-      <Typography variant='h1'>About AMOURtech</Typography>
-      <Typography variant='body1' sx={{ paddingTop: '5vh', paddingBottom: '6vh' }}>
+      <Typography variant='h1' sx={{ marginBottom: '3vh' }}>About AMOURtech</Typography>
+      <Typography variant='body1' sx={{ marginBottom: '5vh' }}>
           The instigator of crazy underground parties.<br />
           The ambassador of love.<br />
           Pissing off your parents is what I do.<br />
           Cheers.
       </Typography>
-      <Typography sx={{ paddingBottom: '4vh' }}>I play</Typography>
-      <div>
+      <Box sx={{ marginBottom: '2vh' }}>
+        <Typography sx={{ marginBottom: '2vh' }}>I play</Typography>
         <Text variant="h1">Melodic House</Text>
         <Text variant="h1">Progressive House</Text>
         <Text variant="h1">Deep Tech House</Text>
+      </Box>
+      <div>
+        <Typography variant='body1' sx={{ marginBottom: '2vh' }}>Latest mix</Typography>
+        <iframe width="90%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Famourtech%2Fmelodies-for-destruction-part-three%2F" />
       </div>
     </Holder>
   )

@@ -53,7 +53,7 @@ const Social = () => {
         }
       </Stack>
       <Stack direction="row" spacing={3} alignItems='center'>
-        <Avatar><a href='https://www.youtube.com/amourtech' target="_blank" rel="noopener noreferrer"><YouTubeIcon color="secondary" fontSize={size} /></a></Avatar>
+        <Avatar><a href='https://www.youtube.com/@amourtech756/videos' target="_blank" rel="noopener noreferrer"><YouTubeIcon color="secondary" fontSize={size} /></a></Avatar>
         {!isMatch && isHeight &&
           <Typography variant='caption'>Youtube</Typography>
         }
