@@ -17,6 +17,15 @@ export const theme = createTheme({
       //contrastText: '#880e4f',
     },
   },
+  breakpoints: {
+    values: {
+      xs: 400,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
   typography: {
     fontFamily: 'Monospace, Arial',
     fontSize: 16
@@ -74,6 +83,14 @@ export const theme = createTheme({
         }
       }
     },
+    MuiList: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'black',
+          color: 'white',
+        },
+      },
+    },
     MuiAvatar: {
       styleOverrides: {
         root: {
@@ -127,27 +144,19 @@ export const logoStyling = {
 export const socialMediaStyling = {
   position: 'absolute',
   right: 'max(5vw, 100px)',
-  top: 'max(40vh, 130px)',
+  top: 'max(45vh, 130px)',
   width: '200px',
   height: '100px',
   justifyContent: 'center',
 }
 
 export const gigBoxStyling = {
-  width: '75vw',
-  minWidth: '45vw',
-  maxWidth: 'min(80vw, 600px)',
-  height: '70vh',
   marginTop: '7vh',
   marginLeft: 'max(30px, 5vw)',
   overflow: 'hidden',
 }
 
 export const gigCardStyling = {
-  width: '75vw',
-  minWidth: 'max(320px, 63vw)',
-  maxWidth: 'min(80vw, 600px)',
-  height: '65vh',
   backgroundColor: 'RGB(255,255,255,0.1)',
   color: 'secondary.main',
   marginTop: '2vh',

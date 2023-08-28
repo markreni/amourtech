@@ -13,7 +13,7 @@ const Social = () => {
   const theme = useTheme()
   const isMatch = useMediaQuery(theme.breakpoints.down('md'))
   const isSmallest = useMediaQuery(theme.breakpoints.down('sm'))
-  const isHeight = useMediaQuery('(min-height: 1000px)')
+  const isHeight = useMediaQuery('(min-height: 700px)')
   const direction = isMatch || !isHeight ? 'row' : 'column'
   const paddingBottom = isMatch || !isHeight ? 0.8 : 0
   const socialMediaStylingRow =
@@ -24,7 +24,7 @@ const Social = () => {
     width: '85vw',
   } : !isHeight ? {
     position: 'absolute',
-    left: 'max(42vw, 0px)',
+    left: 'max(0vw, 0px)',
     top: 'max(58vh, 130px)',
     width: '85vw',
   } : {}
