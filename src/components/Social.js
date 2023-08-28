@@ -15,7 +15,7 @@ const Social = () => {
   const theme = useTheme()
   const menu = useMenu()
 
-  const isWidth = useMediaQuery(theme.breakpoints.down('md'))
+  const isWidth = useMediaQuery(theme.breakpoints.down('lg'))
   const isSmallestSpace = useMediaQuery(theme.breakpoints.down('md'))
   const isHeight = useMediaQuery('(min-height: 700px)')
   const isMenu = useMediaQuery(theme.breakpoints.down('xs'))

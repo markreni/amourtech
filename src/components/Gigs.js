@@ -30,7 +30,7 @@ const Gigs = () => {
             return(
               <div key={index}>
                 <Grid container>
-                  <Grid component='div' item xs={7} md={7} lg={7} sx={{ marginBottom: '20px' }}>
+                  <Grid component='div' item xs={9} md={9} lg={9} sx={{ marginBottom: '20px' }}>
                     <Typography variant='body1'>
                       {gig.date} <br /> {gig.premises} <br /> <b>{gig.location}</b>
                     </Typography>

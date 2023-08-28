@@ -17,7 +17,7 @@ const Bio = () => {
 `
 
   const Holder = styled(Box)(() => ({
-    width: 'clamp(30vw, 50vw, 60vw)',
+    width: 'clamp(30vw, 80vw, 80vw)',
     height: 'clamp(30vh, 78vh, 80vh)',
     background: 'transparent',
     borderRadius: '10px',
