@@ -22,8 +22,8 @@ const Social = () => {
   const direction = isWidth || !isHeight ? 'row' : 'column'
   const paddingBottom = isWidth || !isHeight ? 0.8 : 0
   const spacing = isSmallestSpace ? 0 : !isHeight ? 2 : 3
-  const size = isSmallestSpace ? 'medium' : 'large'
-  const sizeIcons = isSmallestSpace ? 0.7 : 1
+  const size = isSmallestSpace ? 'medium' : 'medium'
+  const sizeIcons = isSmallestSpace ? 0.7 : 0.7
   const socialMediaStylingRow =
   isMenu ? {
     position: 'fixed',
@@ -33,9 +33,14 @@ const Social = () => {
   } :
     isWidth ? {
       position: 'fixed',
-      left: 'max(10vw, 50px)',
-      top: '88vh',
-      width: 'clamp(50vw, 65vw, 75vw)',
+      left: '0',
+      height: 'auto',
+      top: 'none',
+      bottom: '0vh',
+      paddingBottom: '15px',
+      opacity: '70%',
+      backgroundColor: 'primary.main',
+      width: 'clamp(50vw, 100vw, 100vw)',
     } : !isHeight ? {
       position: 'absolute',
       left: 'max(70vw, 0px)',

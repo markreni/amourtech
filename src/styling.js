@@ -152,7 +152,7 @@ export const socialMediaStyling = {
 }
 
 export const gigBoxStyling = {
-  width: 'clamp(30vw, 70vw, 80vw)',
+  width: 'clamp(60vw, 65vw, 80vw)',
   height: 'clamp(30vh, 78vh, 80vh)',
   marginTop: '7vh',
   marginLeft: 'max(30px, 5vw)',
@@ -160,7 +160,7 @@ export const gigBoxStyling = {
 }
 
 export const gigCardStyling = {
-  width: 'clamp(30vw, 70vw, 80vw)',
+  width: 'clamp(60vw, 65vw, 80vw)',
   height: 'clamp(30vh, 78vh, 80vh)',
   backgroundColor: 'RGB(255,255,255,0.1)',
   color: 'secondary.main',
@@ -172,7 +172,7 @@ export const footerStyling = {
   position: 'fixed',
   bottom: '0vh',
   backgroundColor: 'primary.main',
-  width:'95vw',
+  width:'100vw',
   minWidth: 'max(100px, 95vw)',
   //marginTop: '10px',
 }
