@@ -49,7 +49,7 @@ function App() {
                   <MenuIcon
                     id='resources-button'
                     onClick={menu.handleClick}
-                    aria-control={menu.open ? 'resources-menu' : undefined}
+                    aria-controls={menu.open ? 'resources-menu' : undefined}
                     aria-haspopup='true'
                     aria-expanded={menu.open ? 'true' : undefined}
                   />

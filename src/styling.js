@@ -19,6 +19,7 @@ export const theme = createTheme({
   },
   breakpoints: {
     values: {
+      xxs: 0,
       xs: 350,
       sm: 600,
       md: 800,
@@ -115,6 +116,7 @@ export const containerStyling = {
 
 export const backgroundImageStyling = {
   backgroundImage: {
+    xxs: `url(${imageSmall})`,
     xs: `url(${imageSmall})`,
     md: `url(${imageBig})`
   },
